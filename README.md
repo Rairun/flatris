@@ -11,3 +11,35 @@
 Thanks [@paulgergely](https://twitter.com/paulgergely) for the initial flat design!
 
 Also see [elm-flatris](https://github.com/w0rm/elm-flatris).
+
+# Run using Docker
+
+## Prerequisities
+
+In order to run Flatris you'll need Docker installed:
+
+* [Linux](https://docs.docker.com/docker-for-mac/install/)
+* [OS X](https://docs.docker.com/engine/install/#server)
+* [Windows](https://docs.docker.com/docker-for-windows/install/)
+
+and [Docker Compose](https://docs.docker.com/compose/install/#install-compose)
+
+## Usage
+
+### Run application build with Docker Compose:
+
+```shell
+docker-compose up
+```
+
+After that print `http://localhost:3000/` in any browser and play.
+
+### Stop application:
+```shell
+docker-compose down
+```
+
+### Remove unnecessary files:
+```shell
+docker image rm flatris node
+```
