@@ -12,9 +12,9 @@ Thanks [@paulgergely](https://twitter.com/paulgergely) for the initial flat desi
 
 Also see [elm-flatris](https://github.com/w0rm/elm-flatris).
 
-##Run using Docker
+#Run using Docker
 
-### Prerequisities
+## Prerequisities
 
 In order to run Flatris you'll need Docker installed:
 
@@ -24,18 +24,22 @@ In order to run Flatris you'll need Docker installed:
 
 and [Docker Compose](https://docs.docker.com/compose/install/#install-compose)
 
-### Usage
+## Usage
 
-Run container build with Docker Compose:
+### Run application build with Docker Compose:
 
 ```shell
 docker-compose up
 ```
 
-Now, print `http://localhost:3000/` in any browser and play.
+After that print `http://localhost:3000/` in any browser and play.
 
-Stop application:
+### Stop application:
+```shell
 docker-compose down
+```
 
-Remove unnecessary files:
+### Remove unnecessary files:
+```shell
 docker image rm flatris node
+```
