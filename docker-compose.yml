@@ -3,5 +3,7 @@ version: "3"
 services:
   flatris:
     build: .
+    container_name: flatris_docker
+    image: flatris
     ports:
       - "3000:3000"
